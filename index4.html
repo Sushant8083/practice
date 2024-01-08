@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+
+<body>
+  <div id="main" class="main">
+    <div id="nav">
+      <img src="./4ec9f9f9f044ed93355bfc6d9b34e600-removebg-preview.png" alt="" style="height: 60px;">
+      <div id="nav-1">
+        <h3>INTRO</h3>
+        <h3>WHO</h3>
+        <h3>WHAT</h3>
+        <h3>WORK</h3>
+      </div>
+      <h3 id="cont">CONTACT</h3>
+    </div>
+    <img id="bikeimg" class="bikeimg"
+      src="./43-430558_motorcycle-png-transparent-bike-cartoon-image-png-png-removebg-preview.png" alt="">
+    <h1 id="who">Who.</h1>
+  </div>
+
+  <!-- <script src="./script.js"></script> -->
+  <script>
+    var main = document.querySelector('.main');
+    var image = document.querySelector('.bikeimg');
+
+    main.addEventListener("mousemove", function(dets){
+      image.style.top = 1-dets.y*0.05 + "px";
+      image.style.left = 1-dets.x*0.05 + "px";
+
+    })
+
+  </script>
+</body>
+
+</html>
